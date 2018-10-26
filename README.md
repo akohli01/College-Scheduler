@@ -10,9 +10,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 **Prerequisites**
 
-Android Device
-And/Or
-Android Studio with Emulator
+Android Device  
+And/Or  
+Android Studio with Emulator  
 
 **Testing**
 
