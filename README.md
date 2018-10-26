@@ -16,8 +16,7 @@ Android Studio with Emulator
 
 **Testing**
 
-This project includes an APK file that can run on an emulator in Android studio or can be installed and run on a Android mobile
-device.
+This project includes an APK file, located at app/release/app-release.apk, that can run on an emulator in Android studio or can be installed and run on a Android mobile device.
 
 If you would like to modify the source files, the project structure is as follows...
 
