@@ -23,7 +23,7 @@ If you would like to modify the source files, the project structure is as follow
 
 The app/src/main directory contains all the java package(s) mentioned below:
 
-java: this package contains the logic including different activities, database connectivity, and utility classes
+java: this package contains the logic including different activities, database connectivity, and utility classes  
 res: this package contains the resources needed for the logic including layouts, images, and themes.
 
 **Contributing**
