@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.ak.c196">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.TermActivity"></activity>
+        <activity android:name=".activity.AddTermActivity" />
+        <activity android:name=".activity.CourseActivity" />
+        <activity android:name=".activity.EditTermActivity" />
+        <activity android:name=".activity.AddCourseActivity" />
+        <activity android:name=".activity.DetailedCourseActivity" />
+        <activity android:name=".activity.EditCourseActivity" />
+        <activity android:name=".activity.NoteActivity" />
+        <activity android:name=".activity.AddNoteActivity" />
+        <activity android:name=".activity.ViewAndEditNoteActivity" />
+        <activity android:name=".activity.AssessmentActivity" />
+        <activity android:name=".activity.AddAssessmentActivity" />
+        <activity android:name=".activity.EditAssessmentActivity" />
+        <activity android:name=".activity.DetailedTermActivity" />
+
+        <receiver android:name=".notification.NotificationReceiver">
+            <intent-filter>
+                <action android:name="startDateAction" />
+                <action android:name="endDateAction" />
+                <action android:name="goalDateAction" />
+                <action android:name="dueDateAction" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".activity.DetailedAssessmentActivity" />
+        <activity android:name=".activity.HomeActivity">
+
+        </activity>
+        <activity
+            android:name=".activity.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

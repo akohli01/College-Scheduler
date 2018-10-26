@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/info_icon"
+        android:title="information"
+        android:icon="@drawable/baseline_info_white_24"
+        app:showAsAction="always"></item>
+
+
+    <item
+        android:id="@+id/edit_icon"
+        android:title="edit"
+        android:icon="@drawable/baseline_edit_white_24"
+        app:showAsAction="always"
+
+        ></item>
+
+    <item
+        android:id="@+id/delete_icon"
+        android:title="delete"
+        android:icon="@drawable/baseline_delete_white_24"
+        app:showAsAction="always"
+
+        ></item>
+
+    <item
+        android:id="@+id/close_icon"
+        android:title="close"
+        android:icon="@drawable/baseline_close_white_24"
+        app:showAsAction="always"
+
+        ></item>
+
+</menu>

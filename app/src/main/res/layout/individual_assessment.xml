@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/assessmentIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@drawable/baseline_assessment_black_24" />
+
+    <TextView
+        android:id="@+id/textView_assessmentTitle"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/assessmentIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="1dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_ID"
+        android:layout_width="20dp"
+        android:layout_height="9dp"
+        android:layout_alignTop="@+id/assessmentIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="338dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView_goalDate"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/assessmentIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginBottom="1dp"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_dueDate"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/assessmentIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginBottom="3dp"
+        android:text="TextView"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_type"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_assessmentTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="9dp" />
+</RelativeLayout>

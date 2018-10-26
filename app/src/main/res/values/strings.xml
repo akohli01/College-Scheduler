@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WGU C196</string>
+
+    <string-array name="course_status_array">
+        <item>In progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+        <item>Plan to take</item>
+    </string-array>
+    <string-array name="assessment_type_array">
+        <item>Objective Assessment</item>
+        <item>Performance Assessment</item>
+    </string-array>
+    <string name="title_activity_assessment">AssessmentActivity</string>
+    <string name="title_activity_add_assessment">AddAssessmentActivity</string>
+    <string name="title_activity_edit_assessment">EditAssessmentActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+</resources>

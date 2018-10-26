@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/noteIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        app:srcCompat="@drawable/baseline_note_black_24" />
+
+    <TextView
+        android:id="@+id/textView_noteName"
+        android:layout_width="168dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="27dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView_ID"
+        android:layout_width="20dp"
+        android:layout_height="9dp"
+        android:layout_alignTop="@+id/noteIcon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="340dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddTermActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="104dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="51dp"
+                android:text="Course Name:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="79dp" />
+
+            <EditText
+                android:id="@+id/courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="98dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="126dp"
+                android:text="Start Date:"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="98dp"
+                android:layout_height="17dp"
+                android:layout_marginTop="186dp"
+                android:layout_marginEnd="-1dp"
+                android:text="End Date:"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/startDate"
+                android:layout_width="142dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="70dp"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                android:longClickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/courseName" />
+
+            <EditText
+                android:id="@+id/endDate"
+                android:layout_width="143dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:focusable="false"
+                android:inputType="date"
+                android:longClickable="false"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="@+id/startDate" />
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="4dp"
+                android:text="Add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="102dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="240dp"
+                android:text="Status:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="8dp"
+                android:background="#000"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/status_spinner" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="248dp"
+                android:text="Mentor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.169" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:background="#000"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <Spinner
+                android:id="@+id/status_spinner"
+                android:layout_width="171dp"
+                android:layout_height="33dp"
+                app:layout_constraintStart_toStartOf="@+id/courseName"
+                app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+            <ToggleButton
+                android:id="@+id/startDate_notification"
+                style="@style/toggleButton"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_gravity="right"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_toggle_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="@+id/courseName" />
+
+            <ToggleButton
+                android:id="@+id/endDate_notification"
+                style="@style/toggleButton"
+                android:layout_width="44dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/ic_toggle_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="@+id/courseName" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="124dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="180dp"
+                android:text="Name:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="135dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="124dp"
+                android:text="Email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="129dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="72dp"
+                android:text="Phone:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView8" />
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="400dp"
+                android:layout_height="604dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"></View>
+
+            <EditText
+                android:id="@+id/mentorName"
+                android:layout_width="192dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.459"
+                app:layout_constraintStart_toEndOf="@+id/textView14" />
+
+            <EditText
+                android:id="@+id/mentorEmail"
+                android:layout_width="209dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/mentorPhone"
+                android:layout_width="205dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="@+id/textView16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
