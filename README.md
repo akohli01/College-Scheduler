@@ -1,5 +1,5 @@
 
-**College Term Scheduling Application**
+**College Scheduling Application**
 
 This is simple scheduling mobile application thats you to schedule college terms, courses, assessments as well as take notes.
 This application was built for the Android platform using Android Studio.
